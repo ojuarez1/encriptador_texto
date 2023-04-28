@@ -105,6 +105,11 @@ aside{
 	margin: -70px auto;
 }
 
+.muneco{
+	width: 95%;
+	margin-left:10px;
+}
+
 .texto-uno{
 	width: 80%;
 	height: 58px;
@@ -202,7 +207,6 @@ footer p{
 	}
 
 	#aOcultar{
-		display:;
 		margin:0;
 		height: 160px;
 		margin: auto;
@@ -291,10 +295,6 @@ footer p{
 			left: 80px;
 			height: 48px;
 			width:228px;
-		}
-
-		footer{
-
 		}
 
 }
