@@ -197,11 +197,7 @@ footer p{
 		padding:70px 0 0 0 ;
 	}
 
-	.contenedor-requisito{
-		left:40px;
-	}
-
-	.contenedor-botones{
+	.contenedor-requisito, .contenedor-botones{
 		left:40px;
 	}
 

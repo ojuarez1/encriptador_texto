@@ -20,6 +20,8 @@ function desencriptar(){
 		textoDesencriptarDos = textoDesencriptarDos.replace(/ai/img,"a");
 		textoDesencriptarDos = textoDesencriptarDos.replace(/ober/img,"o");
 		textoDesencriptarDos = textoDesencriptarDos.replace(/ufat/img,"u");
+		document.getElementById("aOcultar").style.display="none";
+		document.getElementById("aDesocultar").style.display="inline-block";
 		document.getElementById("textAreaDos").innerHTML = textoDesencriptarDos;
 	}
 	
