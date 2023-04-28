@@ -250,7 +250,9 @@ footer p{
 	}
 }
 	@media(max-width:375px){
-
+		main{
+			height: 750px;
+		}
 		.logo{
 			display:none;
 		}
@@ -260,18 +262,19 @@ footer p{
 			background-repeat: no-repeat;
 			width:100%;
 			height:96px;
-			background-position:16px;
+			background-position:20px 70px;
+			height: 165px;
 		}
 
 		#textAreaUno{
-			top:152px;
+			top:225px;
 			width: 343px;
-			left:15px;
+			left:10px;
 		}
 
 		.contenedor-requisito{
-			left:30px;
-			top: 451px;
+			left:15px;
+			top: 650px;
 		}
 
 		.contenedor-botones{
@@ -279,22 +282,29 @@ footer p{
 			flex-direction:column;
 			gap:24px;
 			height:158px;
-			left: 30px;
-			top: 485px;
+			left: 15px;
+			top: 689px;
+		}
+
+		.contenedor-muñeco{
+			margin:0 0 0 20px;
 		}
 
 		#textAreaDos{
-			margin:15px 0 0 25px;
+			margin:15px 0 0 15px;
 			height: 75px;
 			width:250px;
 			font-size: 16px;
 		}
 
 		.boton-oculto{
-			top: 810px;
-			left: 80px;
+			top: 1020px;
+			left: 65px;
 			height: 48px;
 			width:228px;
 		}
 
+		footer{
+			margin-top:20px
+		}
 }
