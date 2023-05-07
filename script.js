@@ -1,13 +1,14 @@
-function encriptar(){
+function encriptar() {
 	var textoEncriptar = document.getElementById("textAreaUno").value.toLowerCase();
 	var textoEncriptarDos = textoEncriptar.replace(/e/img,"enter");
-	textoEncriptarDos = textoEncriptarDos.replace(/i/img,"imes")
-	textoEncriptarDos = textoEncriptarDos.replace(/a/img,"ai")
-	textoEncriptarDos = textoEncriptarDos.replace(/o/img,"ober")
-	textoEncriptarDos = textoEncriptarDos.replace(/u/img,"ufat")
+	textoEncriptarDos = textoEncriptarDos.replace(/i/img, "imes");
+	textoEncriptarDos = textoEncriptarDos.replace(/a/img, "ai");
+	textoEncriptarDos = textoEncriptarDos.replace(/o/img, "ober");
+	textoEncriptarDos = textoEncriptarDos.replace(/u/img, "ufat");
 	document.getElementById("aOcultar").style.display="none";
 	document.getElementById("aDesocultar").style.display="inline-block";
 	document.getElementById("textAreaDos").innerHTML = textoEncriptarDos;
+	textAreaUno.value = "";
 }
 
 var boton = document.getElementById("encriptador");
@@ -23,6 +24,7 @@ function desencriptar(){
 		document.getElementById("aOcultar").style.display="none";
 		document.getElementById("aDesocultar").style.display="inline-block";
 		document.getElementById("textAreaDos").innerHTML = textoDesencriptarDos;
+		textAreaUno.value = "";
 	}
 	
 	var boton_dos = document.getElementById("desencriptador");

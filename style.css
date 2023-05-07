@@ -1,6 +1,12 @@
+*{
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 150%;
+}
 body{
 	background: linear-gradient(to left,#040FF5,pink);
-	width:100vw;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -30,13 +36,9 @@ main{
 	top:168px;
 	left: 240px;
 	border:none;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 150%;
 	color:#0A3871;
 	border-radius:10px;
+	outline:none
 }
 
 .contenedor-botones{
@@ -76,11 +78,7 @@ main{
 }
 
 .nota{
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 12px;
-	line-height: 150%;
 	color: #495057;
 	opacity: 0.8;
 	margin-left:10px;
@@ -102,7 +100,7 @@ aside{
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
-	margin: -70px auto;
+	margin:auto;
 }
 
 .muneco{
@@ -114,8 +112,6 @@ aside{
 	width: 80%;
 	height: 58px;
 	text-align: center;
-	font-family: 'Inter';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 120%;
@@ -126,11 +122,7 @@ aside{
 .texto-dos{
 	width: 80%;
 	height: 48px;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
-	line-height: 150%;
 	text-align: center;
 	color: #495057;
 	margin:auto;
@@ -138,14 +130,11 @@ aside{
 
 .boton-oculto{
 	position: absolute;
-	width: 328px;
-	height: 67px;
+	width: 300px;
+	height: 60px;
 	top: 600px;
-	left: 1000px;
+	left: 990px;
 	border-radius: 24px;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	text-align: center;
@@ -169,13 +158,18 @@ aside{
 	resize: vertical;
 	margin:30px 0 0 10px;
 	border:none;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
-	line-height: 150%;
 	color:#0A3871;
 	border-radius:10px;
+	outline: none
+}
+
+#textAreaDos::moz-selection {
+	background-color: transparent;
+}
+
+#textAreaDos::selection {
+	background-color: transparent;
 }
 
 footer{
