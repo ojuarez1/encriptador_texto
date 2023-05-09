@@ -1,43 +1,49 @@
-function encriptar() {
-	var textoEncriptar = document.getElementById("textAreaUno").value.toLowerCase();
-	var textoEncriptarDos = textoEncriptar.replace(/e/img,"enter");
-	textoEncriptarDos = textoEncriptarDos.replace(/i/img, "imes");
-	textoEncriptarDos = textoEncriptarDos.replace(/a/img, "ai");
-	textoEncriptarDos = textoEncriptarDos.replace(/o/img, "ober");
-	textoEncriptarDos = textoEncriptarDos.replace(/u/img, "ufat");
-	document.getElementById("aOcultar").style.display="none";
-	document.getElementById("aDesocultar").style.display="inline-block";
-	document.getElementById("textAreaDos").innerHTML = textoEncriptarDos;
-	textAreaUno.value = "";
+var textArea1 = document.getElementById("textAreaUno");
+var textArea2 = document.getElementById("textAreaDos");
+
+
+function encriptarTexto(mensaje){
+	var letras = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+	for (let i = 0; i < letras.length; i++) {
+		if (mensaje.includes(letras[i][0])) {
+			mensaje = mensaje.replaceAll(letras[i][0], letras[i][1]);
+		}
+	}
+	return mensaje
 }
 
-var boton = document.getElementById("encriptador");
-boton.onclick = encriptar;
+var muneco = document.getElementById("aOcultar");
+var contMuneco = document.getElementById("aDesocultar");
 
-function desencriptar(){
-		var textoDesencriptar = document.getElementById("textAreaUno").value;
-		var textoDesencriptarDos = textoDesencriptar.replace(/enter/img,"e");
-		textoDesencriptarDos = textoDesencriptarDos.replace(/imes/img,"i");
-		textoDesencriptarDos = textoDesencriptarDos.replace(/ai/img,"a");
-		textoDesencriptarDos = textoDesencriptarDos.replace(/ober/img,"o");
-		textoDesencriptarDos = textoDesencriptarDos.replace(/ufat/img,"u");
-		document.getElementById("aOcultar").style.display="none";
-		document.getElementById("aDesocultar").style.display="inline-block";
-		document.getElementById("textAreaDos").innerHTML = textoDesencriptarDos;
-		textAreaUno.value = "";
+function darClick() {
+	muneco.style.display = "none";
+	contMuneco.style.display = "inline-block"
+	var texto = encriptarTexto(textArea1.value);
+	textArea2.innerHTML = texto;
+	textArea1.value = "";
+}
+
+function desencriptarTexto(textoDes){
+	var letras = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+	for (let i = 0; i < letras.length; i++) {
+		if (textoDes.includes(letras[i][0])) {
+			textoDes = textoDes.replaceAll(letras[i][1], letras[i][0]);
+		}
 	}
-	
-	var boton_dos = document.getElementById("desencriptador");
-	boton_dos.onclick = desencriptar;
+	return textoDes
+}
 
-	function copiar(){
-		var textoEncriptado = document.getElementById("textAreaDos");
-		textoEncriptado.focus()
-		document.execCommand("selectAll");
-		document.execCommand("copy");
-	}
+function clickDos() {
+	muneco.style.display = "none";
+	contMuneco.style.display = "inline-block"
+	var mensaje = desencriptarTexto(textArea1.value);
+	textArea2.innerHTML = mensaje;
+	textArea1.value = "";
+}
 
-	var boton_tres = document.getElementById("btnCopiar");
-	boton_tres.onclick = copiar;
-
-	
+function copiar(){
+	var textoEncriptado = document.getElementById("textAreaDos");
+	textoEncriptado.focus()
+	document.execCommand("selectAll");
+	document.execCommand("copy");
+}
