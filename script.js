@@ -13,11 +13,12 @@ function encriptarTexto(mensaje){
 }
 
 var muneco = document.getElementById("aOcultar");
-var contMuneco = document.getElementById("aDesocultar");
+var btn = document.querySelector(".oculto");
 
 function darClick() {
 	muneco.style.display = "none";
-	contMuneco.style.display = "inline-block"
+	textArea2.style.display = "inline-block";
+	btn.style.display = "inline-block";
 	var texto = encriptarTexto(textArea1.value);
 	textArea2.innerHTML = texto;
 	textArea1.value = "";
@@ -35,7 +36,8 @@ function desencriptarTexto(textoDes){
 
 function clickDos() {
 	muneco.style.display = "none";
-	contMuneco.style.display = "inline-block"
+	textArea2.style.display = "inline-block";
+	btn.style.display = "inline-block";
 	var mensaje = desencriptarTexto(textArea1.value);
 	textArea2.innerHTML = mensaje;
 	textArea1.value = "";

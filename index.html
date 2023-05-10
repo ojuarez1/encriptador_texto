@@ -21,44 +21,38 @@
 		
 	<main>
 
-		<section>
+		<textarea placeholder="Ingrese el texto aqui" id="textAreaUno"></textarea>
 
-			<textarea placeholder="Ingrese el texto aqui" id="textAreaUno"></textarea>
-
-			<div class="contenedor-requisito">
-				<img src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/bi_exclamation-circle-fill.png?raw=true">
-				<span class="nota">Solo letras minusculas y sin acentos</span>
-			</div>
-			<div class="contenedor-botones">
-				<button class="boton-azul" id="encriptador" onclick="darClick()">
-					Encriptar
-				</button>
-				<button class="boton-gris" id="desencriptador" onclick="clickDos()">
-					Desencriptar
-				</button>
-			</div>
-
-		</section>	
+		<div class="contenedor-requisito">
+			<img src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/bi_exclamation-circle-fill.png?raw=true">
+			<span class="nota">Solo letras minusculas y sin acentos</span>
+		</div>
+		<div class="contenedor-botones">
+			<button class="boton-azul boton" id="encriptador" onclick="darClick()">
+				Encriptar
+			</button>
+			<button class="boton-gris boton" id="desencriptador" onclick="clickDos()">
+				Desencriptar
+			</button>
+			<button class="oculto boton" id="btnCopiar" onclick="copiar()">
+					Copiar
+			</button>
+		</div>
 		
 	</main>
 
 	<aside>
 		
-			<div class="contenedor-muñeco">
-				<div id="aOcultar">
-					<img src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Mu%C3%B1eco.png?raw=true" class="muneco">
-					<div class="contenedor-texto">
-						<p class="texto-uno">Ningun mensaje fue encontrado</p>
-						<p class="texto-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
-					</div>
-				</div>
-				<div id="aDesocultar">
-					<textarea id="textAreaDos"></textarea>
-					<button class="boton-oculto" id="btnCopiar" onclick="copiar()">
-						Copiar
-					</button>
+		<div class="contenedor-muñeco">
+			<textarea id="textAreaDos"></textarea>
+			<div id="aOcultar">
+				<img src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Mu%C3%B1eco.png?raw=true" class="muneco">
+				<div class="contenedor-texto">
+					<p class="texto-uno">Ningun mensaje fue encontrado</p>
+					<p class="texto-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
 				</div>
 			</div>
+		</div>
 
 	</aside>
 		

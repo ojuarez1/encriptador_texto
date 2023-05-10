@@ -17,13 +17,12 @@ header{
 }
 
 .logo{
-
 	padding: 30px 0 0 40px;
 }
 
 main{
 	width:70%;
-	height: 600px;
+	height: 750px;
 	box-sizing: border-box;
 }
 
@@ -34,7 +33,7 @@ main{
 	width:500px;
 	height:200px;
 	top:168px;
-	left: 240px;
+	left: 200px;
 	border:none;
 	color:#0A3871;
 	border-radius:10px;
@@ -43,35 +42,44 @@ main{
 
 .contenedor-botones{
 	position: absolute;
-	width: 680px;
+	width: 1157px;
 	height: 67px;
-	left: 240px;
-	top: 600px;
+	left: 200px;
+	top: 705px;
+	display: flex;
+	gap:25px;
+}
+
+.boton{
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
 }
 
 .boton-azul{
 	background: #0A3871;
-	width: 328px;
-	height: 67px;
-	border-radius: 24px;
 	color:white;
 	border:none;
 }
 
 .boton-gris{
 	background: #D8DFE8;
-	width: 328px;
-	height: 67px;
-	border-radius: 24px;
 	border: 1px solid #0A3871;
+}
+
+.oculto {
+	display: none;
+	background: #D8DFE8;
+	border: 1px solid #0A3871;
+	margin-left:70px;
 }
 
 .contenedor-requisito{
 	position: absolute;
 	width: 300px;
 	height: 18px;
-	left: 240px;
-	top: 565px;
+	left: 200px;
+	top: 655px;
 	display:flex;	
 }
 
@@ -91,7 +99,7 @@ aside{
 
 .contenedor-muñeco{
 	width:80%;
-	height:85vh;
+	height:100%;
 	background: #FFFFFF;
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	border-radius: 32px;
@@ -126,32 +134,13 @@ aside{
 	margin:auto;
 }
 
-.boton-oculto{
-	margin-top:150px;
-	width: 100%;
-	height: 60px;
-	border-radius: 24px;
-	text-align: center;
-	color: #0A3871;
-}
-
-#aDesocultar{
-	display:none;
-	width:80%;
-	height:85vh;
-	background: #FFFFFF;
-	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-	border-radius: 32px;
-	margin:auto;
-}
-
 #textAreaDos{
-	width:100%;
-	height:300px;
+	display: none;
+	width:80%;
+	height:75%;
 	resize: vertical;
-	margin:30px 0 0 0;
+	margin:auto;
 	border:none;
-	font-size: 24px;
 	color:#0A3871;
 	border-radius:10px;
 	outline: none
@@ -165,14 +154,7 @@ aside{
 	background-color: transparent;
 }
 
-footer{
-	width:100%;
-	height:3vh;
-	padding-top:20px;
-}
-
 footer p{
-	margin:0;
 	font-size: 13px;
 }
 
@@ -190,14 +172,17 @@ footer p{
 		padding:70px 0 0 0 ;
 	}
 
-	.contenedor-requisito, .contenedor-botones{
-		left:40px;
+	.contenedor-botones{
+		width: 90%;
+		left: 40px;
 	}
 
-	#aOcultar{
-		margin:0;
-		height: 160px;
-		margin: auto;
+	.oculto {
+		margin-left:0;
+	}
+
+	.contenedor-requisito{
+		left:40px;
 	}
 
 	aside{
@@ -218,82 +203,67 @@ footer p{
 	.texto-uno{
 		margin-top: 30px;
 	}
-	#aDesocultar{
-		height: 160px;
-		margin: auto;
+
+	#textAreaDos{
+		margin-left:20px;
+		height: 135px;
+		width:90%;
+	}
+
+	footer {
+		padding-top:70px;
+	}
+}
+@media(max-width:375px){
+	.logo{
+		display:none;
+	}
+
+	.vector{
+		background-image: url("https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Vector.png?raw=true");
+		background-repeat: no-repeat;
+		width:100%;
+		height:96px;
+		background-position:20px 70px;
+		height: 165px;
+	}
+
+	#textAreaUno{
+		top:225px;
+		width: 343px;
+		left:10px;
+	}
+
+	.contenedor-requisito{
+		left:15px;
+		top: 650px;
+	}
+
+	.contenedor-botones{
+		flex-direction:column;
+		gap:24px;
+		height:158px;
+		left: 15px;
+		top: 689px;
+	}
+
+	.oculto{
+		margin-left:0;
+	}
+
+	.contenedor-muñeco{
+		width: 318px;
+		margin:0 0 0 12px;
+	}
+
+	.texto-uno {
+		margin-top:0;
 	}
 
 	#textAreaDos{
-		margin:15px 0 0 275px;
-		height: 135px;
-		width:45%;
+		margin:0 0 0 15px;
+		height: 80%;
+		width:250px;
+		font-size: 20px;
 	}
-
-	.boton-oculto{
-		position: absolute;
-		height:48px;
-		width:230px;
-		top:650px;
-		left:105px;
-	}
-
-		footer {
-			padding-top:70px;
-		}
-}
-	@media(max-width:375px){
-		main{
-			height: 750px;
-		}
-		.logo{
-			display:none;
-		}
-
-		.vector{
-			background-image: url("https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Vector.png?raw=true");
-			background-repeat: no-repeat;
-			width:100%;
-			height:96px;
-			background-position:20px 70px;
-			height: 165px;
-		}
-
-		#textAreaUno{
-			top:225px;
-			width: 343px;
-			left:10px;
-		}
-
-		.contenedor-requisito{
-			left:15px;
-			top: 650px;
-		}
-
-		.contenedor-botones{
-			display:flex;
-			flex-direction:column;
-			gap:24px;
-			height:158px;
-			left: 15px;
-			top: 689px;
-		}
-
-		.contenedor-muñeco{
-			width: 318px;
-			margin:0 0 0 20px;
-		}
-
-		#textAreaDos{
-			margin:15px 0 0 15px;
-			height: 75px;
-			width:250px;
-			font-size: 20px;
-		}
-
-		.boton-oculto{
-			top: 875px;
-			left: 65px;
-			height: 48px;
-			width:228px;
-		}
 }
