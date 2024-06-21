@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Encriptador de texto</title>
-	<link rel="stylesheet" href="./style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Logo.png?raw=true"
+      />
+    </header>
+    <main>
+      <article class="menu">
+        <section class="seccion1">
+          <div class="div-seccion1">
+            <input
+              type="text"
+              placeholder="Ingrese el texto aqui"
+              class="input-seccion1"
+            ></input>
+  
+            <div class="div_button-seccion1">
+              <div>
+                <img
+                  src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/bi_exclamation-circle-fill.png?raw=true"
+                />
+                <span class="nota">Solo letras minusculas y sin acentos</span>
+              </div>
+              <div>
+                <button
+                  class="boton-azul boton"
+                  id="encriptador"
+                  onclick="darClick()"
+                >
+                  Encriptar
+                </button>
+                <button
+                  class="boton-gris boton"
+                  id="desencriptador"
+                  onclick="clickDos()"
+                >
+                  Desencriptar
+                </button>
+                <button class="oculto boton" id="btnCopiar" onclick="copiar()">
+                  Copiar
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="seccion2">
+          <div class="contenedor-muñeco">
+            <textarea id="textAreaDos"></textarea>
+            <div id="aOcultar">
+              <img
+                src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Mu%C3%B1eco.png?raw=true"
+                class="muneco"
+              />
+              <div class="contenedor-texto">
+                <p class="texto-uno">Ningun mensaje fue encontrado</p>
+                <p class="texto-dos">
+                  Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+      <footer class="footer">
+        <p>&copy Copyright Oscar Juarez - 2023</p>
+      </footer>
+     
+    </main>
 
-</head>
-<body>
-
-	<header>
-
-		<img src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Logo.png?raw=true" class="logo">
-		<div class="vector"></div>
-
-	</header>
-		
-	<main>
-
-		<textarea placeholder="Ingrese el texto aqui" id="textAreaUno"></textarea>
-
-		<div class="contenedor-requisito">
-			<img src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/bi_exclamation-circle-fill.png?raw=true">
-			<span class="nota">Solo letras minusculas y sin acentos</span>
-		</div>
-		<div class="contenedor-botones">
-			<button class="boton-azul boton" id="encriptador" onclick="darClick()">
-				Encriptar
-			</button>
-			<button class="boton-gris boton" id="desencriptador" onclick="clickDos()">
-				Desencriptar
-			</button>
-			<button class="oculto boton" id="btnCopiar" onclick="copiar()">
-					Copiar
-			</button>
-		</div>
-		
-	</main>
-
-	<aside>
-		
-		<div class="contenedor-muñeco">
-			<textarea id="textAreaDos"></textarea>
-			<div id="aOcultar">
-				<img src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Mu%C3%B1eco.png?raw=true" class="muneco">
-				<div class="contenedor-texto">
-					<p class="texto-uno">Ningun mensaje fue encontrado</p>
-					<p class="texto-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
-				</div>
-			</div>
-		</div>
-
-	</aside>
-		
-	<footer>
-
-		<p>&copy Copyright Oscar Juarez - 2023</p>
-		
-	</footer>
-
-	<script type="text/javascript" src="./script.js"></script>
-</body>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
