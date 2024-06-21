@@ -6,7 +6,7 @@
 		line-height: 150%;
 }
 body{
-	background: linear-gradient(to left,#040FF5,pink);
+	background: rgb(230, 230, 233);
 	display: flex;
 	flex-wrap: wrap;
 }
