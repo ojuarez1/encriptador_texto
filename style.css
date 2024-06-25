@@ -8,23 +8,20 @@
 body{
 	background: #F3F5FC;
 }
-
-.header,
-.seccion1,
 .seccion2,
-.footer,
-.div-seccion1{
+.footer{
   border: 1px solid black;
 }
 
 .header{
   padding: 2rem;
+  height: 20vh;
 }
 
 .menu{
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
 }
 
 .seccion1{
@@ -58,6 +55,42 @@ body{
 
 .seccion2{
   width: 35%;
+}
+
+.div_button-seccion1 div:first-child{
+  margin-bottom: 16px;
+}
+
+.div_button-seccion1 div:first-child img{
+  vertical-align:middle;
+  width: 0.6rem;
+}
+
+.div_button-seccion1 div:first-child p{
+  font-size: 0.6rem;
+  display: inline-block;
+}
+
+.div_button-seccion1 div:last-child button{
+  display: inline-block;
+  width: 212px;
+  padding:16px;
+  border-radius: 24px;
+  border:1px solid #0A3871;
+}
+
+.div_button-seccion1 div:last-child button:first-child{
+  background-color:#0A3871;
+  color:#fff
+}
+
+.div_button-seccion1 div:last-child button:nth-child(2){
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+
+.footer{
+  height: 5vh;
 }
 
 
