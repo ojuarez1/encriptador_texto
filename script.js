@@ -1,4 +1,4 @@
-var textArea1 = document.getElementById("textAreaUno");
+/* var textArea1 = document.getElementById("textAreaUno");
 var textArea2 = document.getElementById("textAreaDos");
 
 
@@ -48,4 +48,22 @@ function copiar(){
 	textoEncriptado.focus()
 	document.execCommand("selectAll");
 	document.execCommand("copy");
-}
+} */
+
+const btnEnc = document.querySelector("[data-enc]")
+const btnDes = document.querySelector("[data-des]")
+const contImg = document.querySelector("[data-image]")
+const contUnd = document.querySelector("[data-hidden]")
+const input = document.querySelector("[data-input]")
+
+btnEnc.addEventListener("click", () => {
+  console.log(input.value)
+  let letras = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+  contImg.style.display = "none"
+  contUnd.style.display = "flex"
+})
+
+btnDes.addEventListener("click", () => {
+  contImg.style.display = "flex"
+  contUnd.style.display = "none"
+})

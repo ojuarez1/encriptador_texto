@@ -25,7 +25,7 @@
             <input
               type="text"
               placeholder="Ingrese el texto aqui"
-              class="input-seccion1"
+              data-input
             ></input>
   
             <div class="div_button-seccion1">
@@ -37,14 +37,12 @@
               </div>
               <div>
                 <button
-                  onclick="darClick()"
+                data-enc
                 >
                   Encriptar
                 </button>
                 <button
-                  class="boton-gris boton"
-                  id="desencriptador"
-                  onclick="clickDos()"
+                  data-des
                 >
                   Desencriptar
                 </button>                
@@ -54,7 +52,7 @@
         </section>
         <section class="seccion2">
           <div class="div-seccion2">            
-            <div class="div_imagen-seccion2">
+            <div class="div_imagen-seccion2" data-image>
               <img
                 src="https://github.com/ojuarez1/challenge-desencriptador/blob/master/Imagenes/Mu%C3%B1eco.png?raw=true"
                 class="muneco"
@@ -66,9 +64,9 @@
                 </p>
               </div>
             </div>
-            <div class="div_textEnc-seccion2">
+            <div class="div_textEnc-seccion2" data-hidden>
               <textarea></textarea>
-              <button onclick="copiar()">
+              <button >
                   Copiar
                 </button>
             </div>

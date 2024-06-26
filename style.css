@@ -34,7 +34,7 @@ body{
   padding: 2.5rem 0;
 }
 
-.input-seccion1{
+.div-seccion1 input{
   width: 75%;
   height:48px;
   background: #F3F5FC;
@@ -92,13 +92,13 @@ body{
 }
 
 .div_imagen-seccion2{
-  display: none;
+  display:flex;
   justify-content: center;
   align-items: center;
 }
 
 .div_textEnc-seccion2 {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 0;
